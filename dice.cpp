@@ -1,14 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "xdy.cpp"
 
 using namespace std;
 
 int main(){
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+    bool m = true;
+    int d = 6, n = 1;
 
-    for (const string& word : msg){
-        cout << word << " ";
-    }
-    cout << endl;
+    cout << "You Rolled " << n << "d" << d << " and got a " << xdy(n,d) << endl;
 }
